@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "futuraBook";
+  src: url(../fonts/Futura-book.ttf) format('truetype');
+  weight: 400;
+}
+
+@font-face {
+  font-family: "futuraBold";
+  src: url(../fonts/Futura-bold.ttf) format('truetype');
+  weight: 700;
+}
+
+@font-face {
+  font-family: "futuraMedium";
+  src: url(../fonts/Futura-medium.ttf) format('truetype');
+  weight: 700;
+}
+
+
+@font-face {
+  font-family: "futuraBkt";
+  src: url(../fonts/Futura-black.ttf) format('truetype');
+  weight: 800;
+}
+
+
+*{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body,html{ margin: 0; padding: 0; }
+
+body{
+    color: #fff;
+    font-family: "FuturaBook";
+}
+
+.column{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.column .interior{
+    max-width: 600px;
+}
+
+.right .interior{
+    margin-left: auto;
+    margin-right: 0;
+    text-align: right;
+}
+
+.green{ background: #289548; }
+.yellow{ background: #e8b318; }
+.blue{ background: #313777; }
+.red{ background: #db0010; }
+
+h2{
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: "futuraBkt";
+    letter-spacing: 1.6px;
+    font-size: 31px;
+    border-top: 10px solid #fff;
+    border-bottom: 10px solid #fff;
+    padding: 15px 0px;
+}
+
+p{
+    weight: 400;
+}
+
+p.sub{
+    font-family: "futuraBold";
+    font-size: 25px;
+}
+
+p.text{
+    font-family: "futuraMedium";
+    font-size: 20px;
+}
+
+.section{
+    padding: 30px 15px;
+}
