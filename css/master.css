@@ -277,13 +277,31 @@ p.text{
     padding: 10px;
     position: absolute;
     right: 70px;
-    bottom: 70px;
+    bottom: 60px;
+}
+
+.box.boxblue{
+    right: auto;
+    left: 70px;
+    background: #2a347a;
+}
+
+.box.boxyellow{
+    background: #fab400;
 }
 
 .box p{
     text-transform: uppercase;
     margin: 0px;
     padding: 10px;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    line-height: 1.4;
+}
+
+.box .box-white p{
+    text-align: left;
+    color: #000;
 }
 
 .dialog{
