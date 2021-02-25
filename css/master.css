@@ -1,48 +1,43 @@
 @font-face {
   font-family: "futuraBook";
-  src: url(../fonts/Futura-book.ttf) format('truetype');
-  weight: 400;
+  src: url(../fonts/book.woff2);
 }
 
 @font-face {
   font-family: "futuraBold";
-  src: url(../fonts/Futura-bold.ttf) format('truetype');
-  weight: 700;
+  src: url(../fonts/demi.woff2);
 }
-
-@font-face {
-  font-family: "futuraMedium";
-  src: url(../fonts/Futura-medium.ttf) format('truetype');
-  weight: 700;
-}
-
 
 @font-face {
   font-family: "futuraBkt";
-  src: url(../fonts/Futura-black.ttf) format('truetype');
-  weight: 800;
+  src: url(../fonts/extrabold.woff);
 }
 
-
 *{
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
 }
 
 body,html{ margin: 0; padding: 0; }
 
 body{
     color: #fff;
-    font-family: "FuturaBook";
+    font-family: "futuraBook";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizelegibility
 }
 
 .column{
-    max-width: 800px;
+    max-width: 750px;
     margin: 0 auto;
 }
 
 .column .interior{
-    max-width: 600px;
+    max-width: 550px;
+}
+
+.column .interior.larger{
+    max-width: 590px;
 }
 
 .right .interior{
@@ -51,36 +46,143 @@ body{
     text-align: right;
 }
 
-.green{ background: #289548; }
-.yellow{ background: #e8b318; }
-.blue{ background: #313777; }
+.green{ background: #289548; } .green b{color: #ffd200;}
+.yellow{ background: #e8b318; } .yellow b{color: #313777; }
+.blue{ background: #313777; } .blue b{color: #e8b318; }
 .red{ background: #db0010; }
 
 h2{
     text-transform: uppercase;
-    font-weight: 800;
     font-family: "futuraBkt";
-    letter-spacing: 1.6px;
-    font-size: 31px;
+    letter-spacing: 0.6px;
+    font-size: 29px;
     border-top: 10px solid #fff;
     border-bottom: 10px solid #fff;
-    padding: 15px 0px;
-}
-
-p{
-    weight: 400;
+    padding: 18px 0px;
+    margin-bottom: 40px;
 }
 
 p.sub{
     font-family: "futuraBold";
-    font-size: 25px;
+    font-size: 32px;
+    line-height: 1.1;
+    margin-bottom: 30px;
 }
 
 p.text{
-    font-family: "futuraMedium";
-    font-size: 20px;
+    font-family: "futuraBold";
+    font-size: 21px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    position: relative;
+    text-align: left;
+}
+
+.larger .text{
+    padding-left: 35px;
+}
+
+.text b.number{
+    position: absolute;
+    left: 0px;
 }
 
 .section{
     padding: 30px 15px;
+}
+
+.footer{
+    background: #000;
+}
+
+.aliados{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.aliados img{
+    vertical-align: middle;
+    margin: 15px 30px;
+}
+
+.red{
+    position: relative;
+}
+
+/* .pnud{
+    position: absolute;
+    right: 80px;
+    bottom: 70px;
+} */
+
+/* .pnud img{
+    position: relative;
+    top: 5px;
+    margin-left: 10px;
+} */
+
+.pnud{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.line{
+    display: inline-block;
+    height: 1px;
+    background: linear-gradient(90deg,hsla(0,0%,100%,0),#fff 52.78%,#fff);
+    width: 70px;
+    position: relative;
+    top: -5px;
+    margin: 0px 10px;
+}
+
+.line.end{
+    transform: rotate(-180deg)
+}
+
+.pnud p{
+    font-size: 22px;
+    font-family: "futuraBold";
+    margin-bottom: 5px;
+}
+
+.pnud img{
+    vertical-align: middle;
+    margin-left: 7px;
+}
+
+.footer{
+    padding: 120px 0px;
+}
+
+.redes{
+    font-family: "futuraBold";
+    border: 7px solid #fff;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 7px 65px;
+}
+
+.footer .first{
+    font-family: "futuraBkt";
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    line-height: 1.1;
+    font-size: 16px;
+}
+
+.footer p{
+    font-size: 18px;
+}
+
+.footer b{
+    color: #ffd200;
+}
+
+.redes a{
+    color: #ffd200 !important;
+    text-decoration: none !important;
 }
