@@ -13,6 +13,11 @@
   src: url(../fonts/extrabold.woff);
 }
 
+@font-face {
+  font-family: "futuraCB";
+  src: url(../fonts/Futura-conbold.woff);
+}
+
 *{
     box-sizing: border-box;
 }
@@ -76,14 +81,14 @@ h2{
 
 p.sub{
     font-family: "futuraBold";
-    font-size: 32px;
+    font-size: 28px;
     line-height: 1.1;
     margin-bottom: 30px;
 }
 
 p.text{
     font-family: "futuraBold";
-    font-size: 21px;
+    font-size: 19px;
     line-height: 1.2;
     margin-bottom: 16px;
     position: relative;
@@ -101,6 +106,7 @@ p.text{
 
 .section{
     padding: 40px 15px;
+    position: relative;
 }
 
 .footer{
@@ -262,4 +268,56 @@ p.text{
 .right-menu img{
     vertical-align: middle;
     height: 20px;
+}
+
+.box{
+    font-family: 'futuraCB';
+    width: 180px;
+    background: #f80016;
+    padding: 10px;
+    position: absolute;
+    right: 70px;
+    bottom: 70px;
+}
+
+.box p{
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 10px;
+}
+
+.dialog{
+    height: 17px;
+    display: block;
+}
+
+.diasmall{
+    position: relative;
+    top: -5px;
+}
+
+.box small{
+    font-family: "futuraBold";
+    font-size: 7px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 0px;
+    position: relative;
+    top: -7px;
+}
+
+.ama{
+    float: right;
+}
+
+.box-white{
+    background: #fff;
+    text-align: center;
+}
+
+.micro{
+    height: 140px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 30px;
 }
