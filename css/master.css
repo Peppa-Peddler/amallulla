@@ -27,6 +27,18 @@ body{
     text-rendering: optimizelegibility
 }
 
+.cover{
+    padding: 0px;
+    margin: 0px;
+    margin-top: 70px;
+}
+
+.cover img{
+    width: 100%;
+    margin: 0px;
+    display: block;
+}
+
 .column{
     max-width: 750px;
     margin: 0 auto;
@@ -88,7 +100,7 @@ p.text{
 }
 
 .section{
-    padding: 30px 15px;
+    padding: 40px 15px;
 }
 
 .footer{
@@ -185,4 +197,20 @@ p.text{
 .redes a{
     color: #ffd200 !important;
     text-decoration: none !important;
+}
+
+.menu{
+    background: #000;
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 15px;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
 }
