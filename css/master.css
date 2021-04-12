@@ -381,7 +381,7 @@ p.text{
     padding-bottom: 13px;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 1000;
 }
 
 .menu .container{
@@ -389,7 +389,7 @@ p.text{
 }
 
 .container{
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -514,24 +514,64 @@ p.text{
 }
 
 .recursos{
-    padding: 100px 0px;
+    padding: 50px 0px;
+    padding-bottom: 90px;
 }
 
 .recursos .container{
     position: relative;
 }
 
+.recursos .video{
+    position: relative;
+    max-width: 550px;
+}
+
+.recursos h3{
+    color: #000;
+    /* max-width: 600px; */
+    text-align: right;
+    font-size: 25px;
+    margin-bottom: 0px;
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.recursos h3 span{
+    background: #fff;
+    position: relative;
+    z-index: 40;
+    display: inline-block;
+    padding: 0px 10px;
+    padding-right: 20px;
+}
+
+.recursos .hrl{
+    height: 1px;
+    background: #aaa;
+    margin-bottom: 40px;
+    position: relative;
+    top: -10px;
+}
+
+.video iframe{
+    height: 380px;
+}
+
 .videomenu{
     position: absolute;
-    width: calc(100% - 640px);
+    width: calc(100% - 550px);
     right: 20px;
     color: #000;
     padding-left: 70px;
 }
 
 .voption{
-    border-top: 2px solid #c9c9c9;
-    padding: 20px 20px;
+    border-top: 1px solid #c9c9c9;
+    padding: 15px 15px;
+    padding-top: 15px;
     margin-bottom: 15px;
     font-family: 'futuraBold';
     /* border-radius: 5px; */
@@ -539,14 +579,29 @@ p.text{
     box-shadow: 0px 10px 20px rgba(0,0,0,0.15);
     opacity: 0.5;
     /* background: #f9f9f9; */
-    font-size: 18px;
+    font-size: 17px;
     position: relative;
+    line-height: 1.2;
+}
+
+.voption span{
+    display: block;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.voption small{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    font-size: 12px;
+    color: #777;
 }
 
 .voption .selector{
     position: absolute;
     left: -25px;
-    top: 32px;
+    top: 27px;
     display: none;
 }
 
@@ -558,7 +613,7 @@ p.text{
     opacity: 1;
     background: #fff;
     /* border-top-width: 10px !important; */
-    border: 2px solid #c9c9c9;
+    border: 1px solid #c9c9c9;
     /* background: #000; */
 }
 
@@ -566,29 +621,26 @@ p.text{
     display: block;
 }
 
-.voption span{
-    display: block;
-    font-size: 15px;
-    letter-spacing:
-}
-
-.voption span img {
-       width: 20px;
-       border: 1px solid #c9c9c9;
-       padding: 2px;
-       border-radius: 50%;
-   }
 
 .recursos h2{
     color: #000;
     border-color: #000;
     border: none;
+    /* text-align: center; */
+    max-width: 600px;
+    /* margin: 0 auto; */
+    line-height: 1.2;
     padding: 0px;
-    margin-top: 0px;
-    margin-bottom: 60px;
+    margin-bottom: 15px;
 }
 
-.recursos .video{
+.recursos h2 small{
+    font-family: 'futuraBook';
+}
+
+.recursos h2 small img{
+    width: 30px;
     position: relative;
-    max-width: 640px;
+    top: 4px;
+    margin-right: 3px;
 }
