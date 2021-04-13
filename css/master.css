@@ -606,7 +606,7 @@ p.text{
 .voption .selector{
     position: absolute;
     left: -25px;
-    top: 27px;
+    top: calc(50% - 10px);
     display: none;
 }
 
