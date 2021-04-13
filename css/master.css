@@ -633,10 +633,15 @@ p.text{
     line-height: 1.2;
 }
 
+
 .voption .label{
     display: block;
     font-size: 13px;
     margin-bottom: 5px;
+}
+
+.slides .voption .label{
+    display: none;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -657,6 +662,9 @@ p.text{
 
     .voption .label{
         margin-bottom: 0px;
+    }
+    .slides .voption .label{
+        display: block;
     }
 }
 
