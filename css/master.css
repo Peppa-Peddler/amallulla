@@ -41,6 +41,12 @@ body{
     background-size: cover;
 }
 
+@media only screen and (max-width: 1000px) {
+    .cover{
+        padding: 15px;
+    }
+}
+
 .cover img{
     width: 100%;
     margin: 0px;
@@ -59,6 +65,17 @@ body{
     /* background: rgba(0,0,0,0.85) */
 }
 
+@media only screen and (max-width: 1000px) {
+    .novedades{
+        width: 100%;
+        position: relative;
+        height: auto;
+        background: rgba(0,0,0,0.85);
+        top: 150px;
+        border: 1px solid #aaa;
+    }
+}
+
 .layer{
     /* background: rgba(0,0,0,0.8); */
     padding: 70px;
@@ -66,6 +83,14 @@ body{
     position: relative;
     top: 50%;
     transform: translate(0,-50%);
+}
+
+@media only screen and (max-width: 1000px) {
+    .layer{
+        transform: none;
+        position: static;
+        padding: 15px;
+    }
 }
 
 .layer > img{
@@ -80,6 +105,12 @@ body{
     font-size: 35px;
     margin: 0px;
     margin-top: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .novedades h3{
+        font-size: 25px;
+    }
 }
 
 .linear{
@@ -518,8 +549,15 @@ p.text{
     padding-bottom: 170px;
 }
 
+@media only screen and (max-width: 1000px) {
+    .recursos{
+        padding-bottom: 50px;
+    }
+}
+
 .recursos .container{
     position: relative;
+    padding: 0px 15px;
 }
 
 .recursos .video{
@@ -565,6 +603,12 @@ p.text{
     height: 380px;
 }
 
+@media only screen and (max-width: 1000px) {
+    .video iframe{
+        height: 250px;
+    }
+}
+
 .videomenu{
     position: absolute;
     width: calc(100% - 550px);
@@ -589,10 +633,31 @@ p.text{
     line-height: 1.2;
 }
 
-.voption span{
+.voption .label{
     display: block;
     font-size: 13px;
     margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .videomenu{
+        position: static;
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .voption{
+        width: 24%;
+        display: inline-block;
+        text-align: center;
+        padding: 10px;
+        box-shadow: none;
+        opacity: 0.3;
+    }
+
+    .voption .label{
+        margin-bottom: 0px;
+    }
 }
 
 .voption small{
@@ -608,6 +673,16 @@ p.text{
     left: -25px;
     top: calc(50% - 10px);
     display: none;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .voption .optitle{
+        display: none;
+    }
+    .voption .time{
+        display: none;
+    }
 }
 
 .voption:hover{
@@ -626,6 +701,11 @@ p.text{
     display: block;
 }
 
+@media only screen and (max-width: 1000px) {
+    .voption.selected .selector{
+        display: none;
+    }
+}
 
 .recursos h2{
     color: #000;
