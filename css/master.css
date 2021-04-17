@@ -544,6 +544,44 @@ p.text{
     padding-top: 30px;
 }
 
+.ventanas{
+    color: #000;
+}
+
+.ventanas .container{
+    position: relative;
+}
+
+.ventanaoptions{
+    position: absolute;
+    right: 15px;
+    top: 90px;
+    /* border: 1px solid #eee; */
+    border-top: none;
+    z-index: 20;
+}
+
+.ventana{
+    width: 150px;
+    border-bottom: 3px solid #f1f1f1;
+    padding: 15px 0px;
+    padding-bottom: 12px;
+    text-align: center;
+    float: left;
+    background: #fafafa;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: 'futuraBold';
+    letter-spacing: 0.3px;
+    color: #999;
+    cursor: pointer;
+}
+
+.ventana.selected{
+    color: #289548;
+    border-bottom: 3px solid #289548;
+}
+
 .recursos{
     padding: 50px 0px;
     padding-bottom: 220px;
