@@ -561,6 +561,7 @@ p.text{
     z-index: 20;
 }
 
+
 .ventana{
     width: 150px;
     border-bottom: 3px solid #f1f1f1;
@@ -575,6 +576,19 @@ p.text{
     letter-spacing: 0.3px;
     color: #999;
     cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .ventanaoptions{
+        position: static;
+    }
+    .ventana{
+        width: 33%;
+    }
+    .ventana .container{
+        overflow: hidden;
+    }
 }
 
 .ventana.selected{
@@ -774,4 +788,20 @@ p.text{
     position: relative;
     top: 4px;
     margin-right: 3px;
+}
+
+.recursos{
+    display: none;
+}
+
+.recursos-1{
+    display: block;
+}
+
+.recursos-2{
+    padding-bottom: 80px;
+}
+
+.unclickable{
+    pointer-events: none !important;
 }
