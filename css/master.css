@@ -310,7 +310,7 @@ p.text{
 .pnud p{
     font-size: 22px;
     font-family: "futuraBold";
-    margin-bottom: 5px;
+    margin-bottom: 40px;
 }
 
 .pnud img{
@@ -329,11 +329,13 @@ p.text{
 
 .footer{
     padding: 120px 0px;
+	padding-top: 10px;
 }
 
 @media only screen and (max-width: 1000px) {
     .footer{
         padding: 0px;
+		padding-top: 20px;
     }
 }
 
@@ -350,6 +352,7 @@ p.text{
         padding: 70px 20px;
         padding-bottom: 50px;
         border: none;
+		padding-top: 0px;
     }
 }
 
